@@ -1,3 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0 auto;
+  background-color: #f0efee;
+  font-family: "Open Sans", sans-serif;
+}
+
+main {
+  width: 1920px;
+  height: 970px;
+  max-height: 970px;
+  overflow-y: hidden;
+  display: grid;
+  grid-template-rows: 670px 300px;
+}
+
+main section.feed {
+  overflow: hidden;
+  background-color: #f9f7f6;
+  padding: 1rem;
+}
+
+div.crt-carousel-stage {
+  height: 700px !important;
+  max-height: 700px !important;
+  overflow-y: unset !important;
+}
+
+div.crt-carousel-pane {
+  height: 640px !important;
+  max-height: 640px !important;
+}
+
+div.crt-carousel-pane a:not([href^="https://www.instagram.com"]) {
+  display: none;
+}
+
+main section.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+main section.footer div img {max-width: 200px;}
+
+div.footer--first,
+div.footer--second,
+div.footer--third,
+div.footer--forth {
+  display: flex;
+  padding: 1rem;
+  align-self: center;
+}
+
+div.footer--first img {
+  max-width: 200px;
+}
+
+div.footer--second {
+  font-size: 7rem;
+  font-weight: 500;
+  line-height: 0;
+}
+
+div.footer--third {
+  font-size: 2rem;
+  text-align: center;
 }
